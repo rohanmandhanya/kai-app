@@ -21,6 +21,7 @@ This project provides a RESTful API for scanning and querying vulnerabilities fr
 1. **Clone the repository:**
 
 `git clone https://github.com/yourusername/vulnerability-scanner-api.git`
+
 `cd vulnerability-scanner-api`
 
 2. **Install dependencies:**
