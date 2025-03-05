@@ -29,7 +29,7 @@ func main() {
 	router.HandleFunc(("/query"), controller.QueryHandler).Methods("POST")
 	router.HandleFunc(("/scan"), controller.ScanHandler).Methods("POST")
 
-	fmt.Println(`
+	fmt.Print(`
   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
   \\   *** SERVER IS ALIVE ***  ||  Your API is Ready to Handle All   //
    \\   Ready to tackle requests  ||  With Speed and Precision          //

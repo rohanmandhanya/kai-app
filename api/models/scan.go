@@ -3,7 +3,6 @@ package models
 import (
 	"encoding/base64"
 	"encoding/json"
-	"fmt"
 	"log"
 
 	"gorm.io/gorm"
@@ -58,9 +57,9 @@ type Vulnerability struct {
 	RiskFactors    []string `json:"risk_factors" gorm:"serializer:json"`
 }
 
-func toCSV(slice []string) string {
-	return fmt.Sprintf("%s", slice)
-}
+// func toCSV(slice []string) string {
+// 	return fmt.Sprintf("%s", slice)
+// }
 
 func InsertMultipleScans(db *gorm.DB, jsonData []byte, sourceFile string) error {
 
